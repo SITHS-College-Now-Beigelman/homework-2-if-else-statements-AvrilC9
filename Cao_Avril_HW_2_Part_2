@@ -1,0 +1,40 @@
+// Avril Cao
+// October 6 2024
+// Homework 2 Part 2 
+
+#include <iostream>
+
+using namespace std;
+
+int main ()
+
+{
+    double highestScore;
+    double lowestScore;
+    double remainScore1;
+    double remainScore2;
+    double remainScore3;
+    double remainScore4;
+    
+    cout << "Enter the highest score: " << endl;
+    cin >> highestScore;
+    cout << "Enter the lowest score: " << endl;
+    cin >> lowestScore;
+    cout << "Enter the remaining scores: " << endl;
+    cin >> remainScore1 >> remainScore2 >> remainScore3 >> remainScore4;
+    
+    cout << "What is final score for the hackathon project? " << endl;
+    cout << "The final score for the hackathon project is ";
+    cout << ( remainScore4 + remainScore3 + remainScore2 + remainScore1 ) / 4 << ". " << endl;
+    
+    return 0;
+}
+
+/* Enter the highest score: 
+10
+Enter the lowest score: 
+2
+Enter the remaining scores: 
+9 3 5 6 
+What is the final score for the hackathon project? 
+The final score for the hackathon project is 5.75. */
