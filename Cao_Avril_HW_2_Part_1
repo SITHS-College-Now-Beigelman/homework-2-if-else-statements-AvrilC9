@@ -1,0 +1,53 @@
+// Avril Cao
+// October 6, 2024
+// Homework 2 Part 1 
+
+#include <iostream>
+
+using namespace std; 
+
+int main ()
+
+{
+    double whatMonth;
+    double whatDay;
+    
+    cout << "Enter the month and the day: " << endl;
+    cin >> whatMonth >> whatDay;
+
+if (whatMonth >= 3 && whatMonth <= 6)
+    cout << "It is now Spring! " << endl;
+    if (whatMonth <= 3 && whatDay < 21)
+    cout << " It is now Winter! " << endl;
+    else if (whatMonth >= 6 && whatDay > 20)
+    cout << "It is now Summer! " << endl;
+    
+if (whatMonth >= 6 && whatMonth <= 9)
+    cout << " is now Summer! " << endl;
+    if (whatMonth >= 9 && whatDay > 22)
+    cout << " is now Fall! " << endl;
+    else if (whatMonth <= 6 && whatDay < 21)
+    cout << " is now Spring! " << endl;
+    
+if (whatMonth >= 9 && whatMonth <= 12)
+    cout << " is now Fall! " << endl;
+    if (whatMonth <= 9 && whatMonth > 8 && whatDay < 23)
+    cout << " is now Summer! " << endl;
+    else if (whatMonth >= 12 && whatDay > 21)
+    cout << " is now Winter! " << endl;
+
+if (whatMonth >= 12 && whatMonth <= 3)
+    cout << "It is now Winter! " << endl;
+    if (whatMonth >= 3 && whatDay > 20)
+    cout << "It is now Spring! " << endl;
+    else if (whatMonth <= 12 && whatDay < 22)
+    cout << "It is now Fall! " << endl;
+    
+    return 0; 
+}
+
+/* Enter the month and the day: 
+3 22
+During which month is 3 22? 
+It is now Spring! 
+It is now Spring! */
